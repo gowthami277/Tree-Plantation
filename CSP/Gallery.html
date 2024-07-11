@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey on grafting</title>
+    <style>
+        body {
+            background-color: aliceblue;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        nav {
+            margin-top: 20px;
+            font-size: 30px;
+            font-family: "Markazi Text", serif;
+            text-align: left;
+            color: #132257;
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .container div {
+            width:40%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+        }
+    .protected-image {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <span onclick="home()" id="home">Home</span>
+        <span onclick="about()" id="about">About</span>
+        <span onclick="gallery()" id="gallery">Gallery</span>
+        <span onclick="contact()" id="contact">Contact</span>
+    </nav>
+    <h1>Gallery</h1>
+    <div class="container">
+        <div id="pic1">
+            <img src="C:\Users\New\Downloads\Img2.jpg" class="protected-image">
+        </div><br><br>
+        <div id="pic2">
+            <img src="C:\Users\New\Downloads\Img3.jpg"alt="Image-1">
+        </div><br><br>
+        <div id="pic3">
+            <img src="C:\Users\New\Downloads\Img4.jpg"alt="Image 2">
+        </div><br><br>
+        <div id="pic4">
+            <img src="C:\Users\New\Downloads\Img1-1.jpg" alt="Image 3">
+        </div><br><br>
+        <div id="pic5">
+<img src="C:\Users\New\Downloads\Img7.jpg" alt="Image 5">
+</div><br><br>
+        <div id="pic6">
+            <img src="C:\Users\New\Downloads\Img5.jpg" alt="Image 6">
+            
+       </div><br><br>
+<div id="pic7">
+            <img src="C:\Users\New\Downloads\Img8.jpg" alt="Image 7">
+</div><br><br>
+<div id="pic8">
+            <img src="C:\Users\New\Downloads\Img9.jpg" alt="Image 8">
+        </div>
+
+    </div>
+</body>
+    <script>
+        document.addEventListener('contextmenu', event => event.preventDefault());
+
+        function home() {
+        window.location.href ="home.html";
+    }
+    function about() {
+        window.location.href ="about.html";
+    }
+     function gallery(){
+        window.location.href="gallery.html";
+     }
+     function contact()
+     {
+        window.location.href="contact.html"
+     }
+    </script><footer>
+       <center> <p><l>This website as developed to help about the Plantation<br>copyright&copy; 2024 My Website</l></p></center>
+    </footer>
+    
+</html>
